@@ -37,7 +37,7 @@ Per eseguire il codice sono necessari questi passaggi:
 
 1. RabbitMQ correttamente installato e in esecuzione (è stata utilizzata la config di default per la connessione guest/guest).
 
-2. Eseguire il producer con il comando `ruby producer.rb` e inserire manualmente il messaggio che si vuole inviare (n.b. per test il producert invierà al broker una decina di messaggi per simulare una ripresa del servizio con messaggi in memoria non consegnati).
+2. Eseguire il producer con il comando `ruby producer.rb` e inserire manualmente il messaggio che si vuole inviare (N.B. per test il producer invierà al broker una decina di messaggi per simulare una ripresa del servizio con messaggi in memoria non consegnati).
 
 4. Avviare il consumer con il comando `ruby consumer.rb`.
 

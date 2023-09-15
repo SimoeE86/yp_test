@@ -92,7 +92,7 @@ dlx_queue_messages_total = dlx_queue_messages.split("\n").map { |line| line.spli
 if dlx_queue_messages_total == 0
   puts "[OK] La coda DLX è vuota."
 else
-  puts "!KO! La coda DLX contiene #{main_queue_messages_total} messaggi non elaborati."
+  puts "!KO! La coda DLX contiene #{dlx_queue_messages_total} messaggi non elaborati."
 end
 
 # Fermarmo il broker RabbitMQ

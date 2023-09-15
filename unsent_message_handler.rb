@@ -19,6 +19,7 @@ module UnsentMessageHandler
     # Valutare se nel mondo reale è permesso salvare dati "possibilmente sensibili" su disco,
     # ad ogni modo la consegna specificava un invio manuale via shell quindi chi scrive conosce già il contenuto
     # il SecureRandom.hex(2) serve per abilitare il salvataggio di più di un messaggio al secondo (per il test)
+    # Potrebbe essere utile gestire gli errori di salvataggio su disco
     file_path = File.join(MESSAGE_FOLDER, "#{[Time.now.to_i, SecureRandom.hex(2)].join("_")}.txt")
     File.open(file_path, 'w') do |file|
       file.puts(message)
