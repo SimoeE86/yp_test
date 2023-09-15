@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Ruby
+.bundle/
+Gemfile.lock
+/.ruby-version
+/.ruby-gemset
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Log files
+log/*.log
+log/*.pid
+
+# Temporary files
+tmp/
+
+# Ignora la cartella unsent_messages (creata per i messaggi non inviati del producer) e il suo contenuto
+unsent_messages/
